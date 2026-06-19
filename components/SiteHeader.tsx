@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function SiteHeader(){const links=[["Home","/"],["LGAs","/network/nasarawa-heartland"],["Issues","/network/issues"],["Records","/network/methodology"],["Submit","/network/replicate"],["Network","/network"]]; return <header className="topbar"><nav className="nav"><Link href="/" className="brand"><span className="brand-mark">NCL</span><span>Nigeria Civic Ledger</span></Link><div className="nav-links">{links.map(([l,h])=><Link key={h} href={h}>{l}</Link>)}</div></nav></header>}
